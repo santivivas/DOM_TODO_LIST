@@ -35,9 +35,23 @@ function renderTask(){
         //Crear el elemento de la lista
         const li = document.createElement("li");
         li.textContent = data.text;
+        li.id = "check";
+        //li.id = "listItem";
         taskList.appendChild(li);
         const input = document.createElement("input");
         input.type = "checkbox";
+        input.id = "check";
+        //input.id = "listCheck";
         li.appendChild(input);
+
+        document.delete
     })
+}
+
+function deleteList (){
+    const deleteList = document.getElementById("check");
+    //const deleteList = document.getElementById("listItem");
+    //const deleteListCheck = document.getElementById("listCheck");
+    deleteList.remove();
+    //deleteListCheck.remove();
 }
