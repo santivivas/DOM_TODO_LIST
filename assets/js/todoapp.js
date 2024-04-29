@@ -36,5 +36,8 @@ function renderTask(){
         const li = document.createElement("li");
         li.textContent = data.text;
         taskList.appendChild(li);
+        const input = document.createElement("input");
+        input.type = "checkbox";
+        li.appendChild(input);
     })
 }
